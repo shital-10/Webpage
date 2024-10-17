@@ -1,0 +1,34 @@
+.productrow{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+.productrow .top{
+    grid-column: 1/5;
+}
+.productrow .prow{border: solid;}
+.productrow .prow .data{padding: 15px; text-align: justify;}
+@media only screen and (max-width:1200px){
+    .productrow{
+        grid-template-columns: auto auto auto;
+    }
+    .productrow .top{
+        grid-column: 1/4;
+    }
+}
+@media only screen and (max-width:992px){
+    .productrow{
+        grid-template-columns: auto auto;
+    }
+    .productrow .top{
+        grid-column: 1/3;
+    }
+}
+@media only screen and (max-width:768px){
+    .productrow{
+        grid-template-columns: auto;
+    }
+    .productrow .top{
+        grid-column: 1/2;
+    }
+}
